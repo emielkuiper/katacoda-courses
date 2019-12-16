@@ -4,18 +4,20 @@
 
 master:
   image: "jenkins/jenkins"
-  imageTag: "2.164.1-alpine"
+  imageTag: "2.190-alpine"
   useSecurity: false
   # Master.resources: {requests: {cpu: 50m, memory: 512Mi}, limits: {cpu: 2000m, memory: 2048Mi}}
   serviceType: NodePort
   nodePort: 31111
 
 # List of plugins to be install during Jenkins master start
-  # InstallPlugins:
-  #   - kubernetes:1.14.7
-  #   - workflow-aggregator:2.5
-  #   - workflow-job:2.6
-  #   - git:3.9.3
+  installPlugins:
+    - structs:1.20
+    - kubernetes:1.18.2
+    - workflow-job:2.33
+    - workflow-aggregator:2.6
+    - credentials-binding:1.19
+    - git:3.11.0
 
 agent:
   enabled: true
