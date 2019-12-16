@@ -11,7 +11,7 @@ Commonly the three components ElasticSearch, Fluentd, and Kibana (EFK) are combi
 In the following steps you will learn:
 
 - How to deploy ElasticSearch, Fluentd, and Kibana
-- How to generate log events and query then in Kibana
+- How to generate log events and query them in Kibana
 
 ## Forwarding: Fluent Bit ##
 

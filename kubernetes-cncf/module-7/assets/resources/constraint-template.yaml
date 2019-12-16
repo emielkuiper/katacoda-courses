@@ -1,16 +1,16 @@
 # Derived from the example here: https://github.com/open-policy-agent/gatekeeper#constraint-templates
-apiVersion: templates.gatekeeper.sh/v1alpha1
+apiVersion: templates.gatekeeper.sh/v1beta1
 kind: ConstraintTemplate
 metadata:
-  name: requiredlabels
+  name: k8srequiredlabels
 spec:
   crd:
     spec:
       names:
-        kind: RequiredLabels
-        listKind: RequiredLabelsList
-        plural: requiredlabels
-        singular: requiredlabel
+        kind: K8sRequiredLabels
+        listKind: K8sRequiredLabelsList
+        plural: k8srequiredlabels
+        singular: k8srequiredlabel
       validation:
         # Schema for the `parameters` field
         openAPIV3Schema:
@@ -21,10 +21,11 @@ spec:
   targets:
     - target: admission.k8s.gatekeeper.sh
       rego: |
-        package requiredlabels
-        deny[{"msg": msg, "details": {"missing_labels": missing}}] {
+        package k8srequiredlabels
+
+        violation[{"msg": msg, "details": {"missing_labels": missing}}] {
           provided := {label | input.review.object.metadata.labels[label]}
-          required := {label | label := input.constraint.spec.parameters.labels[_]}
+          required := {label | label := input.parameters.labels[_]}
           missing := required - provided
           count(missing) > 0
           msg := sprintf("you must provide labels: %v", [missing])

@@ -10,7 +10,7 @@ Pods are *groups of containers with shared namespaces and shared volumes*.
 * Pods containers are always co-located on the same host
 * Pod containers share a single IP and portspace and communicate via localhost
 * Pod containers have access to shared volumes for storage
-* Pods are designed to be emphemeral (like cattle, not pets)
+* Pods are designed to be ephemeral (like cattle, not pets)
 
 In this lab we will explore the following:
 
@@ -26,7 +26,7 @@ In this exercise, we explore file based pod specification and creation.
 
 ## Inspecting Pods
 
-Understanding how a pod works will him you debig issues when they arrive.
+Understanding how a pod works will help you debug issues when they arrive.
 In this lab we will explore the Pod lifecycle, networking, and configuration.
 
 For more information, see the Kubernetes [documentation][docs].

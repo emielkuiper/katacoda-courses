@@ -1,5 +1,5 @@
-apiVersion: constraints.gatekeeper.sh/v1alpha1
-kind: RequiredLabels
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sRequiredLabels
 metadata:
   name: team-must-have-metadata
 spec:

@@ -1,4 +1,4 @@
-Let's pull down the Heptio Velero GitHub repo to help us get started: `git clone https://github.com/heptio/velero`{{execute}}
+Let's pull down the Heptio Velero GitHub repo to help us get started: `git clone --single-branch --branch release-0.11 https://github.com/heptio/velero`{{execute}}
 
 Apply some basic prerequisites (e.g. CustomResourceDefinitions, namespaces, and RBAC): `kubectl apply -f velero/examples/common/00-prereqs.yaml`{{execute}}
 

@@ -15,7 +15,7 @@ To see the logs collected from the random-logger service follow these steps in t
 1. When Kibana appears for the first time there will be a brief animation while it initializes.
 1. On the Welcome page click **_Explore on my own_**.
 1. From the left-hand menu select the top **_Discover_** item.
-1. In the form field _Index pattern_ enter **_kubernetes_cluster-*_**
+1. In the form field _Index pattern_ enter **kubernetes_cluster-***
 1. It should read "Success!" and Click the **_> Next step_** button on the right.
 1. In the next form select **_timestamp_** from the dropdown labeled _Time Filter field name_.
 1. From the bottom-right of the form select **_Create index pattern_**.
