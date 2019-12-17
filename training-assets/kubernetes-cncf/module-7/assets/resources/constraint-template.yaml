@@ -1,4 +1,4 @@
-# Derived from the example here: https://github.com/open-policy-agent/gatekeeper#constraint-templates
+# https://raw.githubusercontent.com/open-policy-agent/gatekeeper/master/demo/basic/templates/k8srequiredlabels_template.yaml
 apiVersion: templates.gatekeeper.sh/v1beta1
 kind: ConstraintTemplate
 metadata:
@@ -10,7 +10,7 @@ spec:
         kind: K8sRequiredLabels
         listKind: K8sRequiredLabelsList
         plural: k8srequiredlabels
-        singular: k8srequiredlabel
+        singular: k8srequiredlabels
       validation:
         # Schema for the `parameters` field
         openAPIV3Schema:
