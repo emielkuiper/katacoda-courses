@@ -1,0 +1,53 @@
+{
+  "title": "Terraform for Kubernetes",
+  "description": "We experiment with using Terraform to configure Kubernetes resources.",
+  "difficulty": "beginner",
+  "time": "10-15 minutes",
+  "details": {
+    "assets": {
+      "master": [
+        {
+          "file": "terraform/*",
+          "target": "/root/terraform"
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": "Setup",
+        "text": "setup.md"
+      },
+      {
+        "title": "Updating our infrastructure",
+        "text": "update-infrastructure.md"
+      },
+      {
+        "title": "Creating linked resources",
+        "text": "create-linked-resources.md"
+      },
+      {
+        "title": "Terraform Modules for reuse",
+        "text": "modules.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh",
+      "credits": "Developer(s): [William Hearn](https://sylus.ca) and [Zachary Seguin](https://zacharyseguin.ca)",
+      "courseData": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "uilayout": "editor-terminal",
+    "dashboards": [ ],
+    "uisettings": "yaml",
+    "uimessage1": "\u001b[36;1mDigital Academy training.\u001b[0m Please note that it may take a few moments to install the Terraform command line."
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running"
+  }
+}
