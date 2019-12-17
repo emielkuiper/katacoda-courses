@@ -1,4 +1,4 @@
-Next, we will deploy our Vue.js hello world application.
+Next, in order to solidify what we have learned we will deploy our Vue.js hello world application.
 
 ## Deployment
 
@@ -18,7 +18,7 @@ is working correctly.
 
 After creating the service file contents, create the service:
 
-`kubectl apply -f vue-svc.yaml`{{execute}}
+`kubectl apply -f ./resources/vue-svc.yaml`{{execute}}
 
 List the services, note the external port, then click the following link and
 enter the external port:

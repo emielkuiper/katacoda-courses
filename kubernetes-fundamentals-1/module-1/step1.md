@@ -1,6 +1,6 @@
-We now have a Kubernetes cluster running. Yay!
+Thanks to KataCoda we now have a working Kubernetes cluster running in the background!
 
-We can interact with the cluster using the kubectl command line tool (CLI). This is the primary approach for managing Kubernetes and the applications running on top of the cluster.
+We can interact with any cluster using the kubectl command line tool (CLI). This is the primary approach for managing Kubernetes and the applications running on top of the cluster.
 
 1) Retrieve information about our cluster:
 

@@ -24,15 +24,14 @@ This has identical configuration to what we did during the last step.
 `targetPort` is the port that the Pod is listening in on
 
 Now let's apply the service file in Kubernetes.
+
 - Deploy the service into k8s using the services.yaml file. `kubectl apply -f ./resources/svc.yaml`{{execute}}
 - Check to make sure the service was deployed and what ClusterIP was assigned. `kubectl get svc -o wide`{{execute}}
-- Run a curl against the ClusterIP shown for the http-server-service. `curl YOURCLUSTERIP` (*you will need to type this manually using the clusterip of your specific service*)
+- Run a curl against the ClusterIP shown for the http-server-service. `curl $(kubectl get services | grep http-server | awk '{print $3}' )`{{execute}}
 - Run the curl a few more times (press up arrow to show command again) and notice that each time you run it, a different pod behind the service responds.
 
 You have now successfully deployed multiple pods and exposed them to the rest of the cluster using a ClusterIP.
 
-
-At this point, we have a Deployment and a Service to proxy and load balance
-requests. ClusterIP is useful to let your backend Pods communicate with each other.
+At this point, we have a Deployment and a Service to proxy and load balance requests. ClusterIP is useful to let your backend Pods communicate with each other.
 
 Next, we will create another Deployment so we can see how to use Kubernetes' built-in DNS.

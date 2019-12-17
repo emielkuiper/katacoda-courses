@@ -38,7 +38,7 @@ This shows the high port needed to access the ClusterIP service from outside the
 
 `curl node01:[YOURPORT]`
 
-NOTE: you can get a list of nodes using: `kubectl get nodes`{{execute}}
+> NOTE: you can get a list of nodes using: `kubectl get nodes`{{execute}}
 
 We'll get a response, which is great. We can even access it from our Katacoda session.
 Click on the link below, then enter the external port exposed by the NodePort.

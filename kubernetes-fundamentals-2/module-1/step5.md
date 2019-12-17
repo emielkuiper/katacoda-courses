@@ -27,7 +27,7 @@ View the newly created pod: `kubectl get pods`{{execute}}
 
 Next, open up a shell in the Pod with `kubectl exec -it <pod-name> bash`.
 
-NOTE: Use this command `kubectl exec -it $(kubectl get pods | grep other* | awk '{print $1}') bash`{{execute}}
+> NOTE: Use this command `kubectl exec -it $(kubectl get pods | grep other* | awk '{print $1}') bash`{{execute}}
 
 Now that we're in the Pod, we can access the other Pod via the name of the Service that proxies it. In this case, the name of the Service is `http-server-service`.
 
@@ -65,8 +65,10 @@ This capability is extremely useful. We now have a deterministic way to have one
 
 ## Cleanup
 
-Exit the Pod with: the `exit`{{execute}} command.
-<!-- `exit`{{execute}} -->
+Exit the Pod with the exit command:
 
-Make sure you delete all of the ClusterIP services with
+`exit`{{execute}}
+
+Make sure you delete all of the ClusterIP services with:
+
 `kubectl delete service http-server-service`{{execute}}

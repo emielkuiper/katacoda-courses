@@ -1,1 +1,1 @@
-Now that we've learned about Services work, let's work on a voting app.
+Congratulations, you now have an understanding of Kubernetes Services next we will be taking a look at Kubernetes Configmaps.

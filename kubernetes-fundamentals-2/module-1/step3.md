@@ -11,11 +11,7 @@ Let's see our Service:
 We can see our `http-server` has a type of ClusterIP. In addition, it has a
 VIP - Virtual IP. We can also see that the Service is listening on port `80`.
 
-Now, we can execute a CURL against that VIP from anywhere in our cluster.
-
-`curl http://$SERVICE_IP`
-
-In fact, we can run CURL a few more times and you'll see that the requests are balanced between the two pods.
+Now, we can execute a CURL against that VIP from anywhere in our cluster. In fact, we can run CURL a few more times and you'll see that the requests are balanced between the two pods.
 
 > NOTE: curl your own http-server using: `curl $(kubectl get services | grep http-server | awk '{print $3}' )`{{execute}}
 
