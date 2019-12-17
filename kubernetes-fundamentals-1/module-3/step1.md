@@ -59,7 +59,7 @@ You'll need to execute `curl <container IP>`, with your specific IP address for 
 
 Now that we've accessed the container, let's look at the logs with Docker, using `docker container logs k8s_nginx`, make sure to tab complete that.
 
-Now `exit`{{execute}} the SSH session, we'll use kubectl to read the logs as well:
+Now `exit` the SSH session, we'll use kubectl to read the logs as well:
 
 `kubectl logs nginx`{{execute}}
 

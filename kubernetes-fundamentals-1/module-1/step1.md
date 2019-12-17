@@ -23,4 +23,4 @@ We can interact with any cluster using the kubectl command line tool (CLI). This
 `ssh node01`{{execute}}
 
 However, we will be managing our Kubernetes cluster from the master, so exit
-the SSH connection by typing `exit`{{execute}}.
+the SSH connection by typing `exit`

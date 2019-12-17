@@ -14,7 +14,7 @@ In this section we will learn how to stop, start and remove containers.
 
 `touch TEST.txt && ls`{{execute}}
 
-`exit`{{execute}}
+`exit`
 
 4) Stop the sleepy container and start it again:
 
@@ -30,7 +30,7 @@ In this section we will learn how to stop, start and remove containers.
 
 `ls`{{execute}}
 
-`exit`{{execute}}
+`exit`
 
 Notice that the TEST.txt file is still there. That is because we only stopped and started and are interacting with the same container we created the file on.
 

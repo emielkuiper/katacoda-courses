@@ -67,7 +67,7 @@ This capability is extremely useful. We now have a deterministic way to have one
 
 Exit the Pod with the exit command:
 
-`exit`{{execute}}
+`exit`
 
 Make sure you delete all of the ClusterIP services with:
 

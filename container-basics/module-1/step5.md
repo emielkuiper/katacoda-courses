@@ -23,7 +23,7 @@ Go to server https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.kataco
 
 `docker container exec -it nginx bash`{{execute}}
 
-`exit`{{execute}}
+`exit`
 
 `docker container ls`{{execute}}
 

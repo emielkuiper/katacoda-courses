@@ -10,7 +10,7 @@ This command runs the container, attaches to standard input stream, and get a ps
 
 `touch test && ls`{{execute}}
 
-2) You should see the file created in the root directory of the container. Now exit: `exit`{{execute}}
+2) You should see the file created in the root directory of the container. Now exit: `exit`
 
 3) Run the container once again:
 
