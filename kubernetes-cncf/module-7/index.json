@@ -18,8 +18,20 @@
     },
     "steps": [
       {
+        "title": "Setup",
+        "text": "setup.md"
+      },
+      {
         "title": "Constraint Template",
-        "text": "step1.md"
+        "text": "constraint-template.md"
+      },
+      {
+        "title": "Constraint",
+        "text": "constraint.md"
+      },
+      {
+        "title": "Example",
+        "text": "example.md"
       }
     ],
     "intro": {

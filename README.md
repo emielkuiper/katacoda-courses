@@ -12,4 +12,4 @@ Thanks to BoxBoat for providing the basic for some of our Tutorials.
 
 [boxboat]:        https://boxboat.com
 [cncf]:           https://cncf.io
-[katacoda]:       https://katacoda.com/sylus
+[katacoda]:       https://katacoda.com/statcan

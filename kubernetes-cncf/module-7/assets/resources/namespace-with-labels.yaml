@@ -3,5 +3,5 @@ kind: Namespace
 metadata:
   name: test
   labels:
-    contact: sylus
+    contact: will
     business-unit: devops
