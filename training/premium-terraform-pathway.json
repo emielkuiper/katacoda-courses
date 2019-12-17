@@ -1,0 +1,14 @@
+{
+  "title": "Infrastructure as Code",
+  "description": "Presented by the Digital Academy - A high level overview of Infrastructure as Code.",
+  "icon": "fa-code",
+  "courses": [
+    {
+      "pathway_id": "statcan",
+      "id": "infrastructure-as-code/terraform-kubernetes",
+      "course_id": "infrastructure-as-code-terraform-kubernetes",
+      "title": "Infrastructure as Code: Terraform for Kubernetes",
+      "description": "In this lab, we will examine using Terraform to configure Kubernetes resources."
+    }
+  ]
+}
