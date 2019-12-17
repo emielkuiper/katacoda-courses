@@ -6,7 +6,7 @@ You can access these courses at [Katacoda][katacoda].
 
 ### Acknowledgements
 
-Thanks to BoxBoat for providing the basic for some of our Tutorials.
+Thanks to [BoxBoat][boxboat] for providing the basics and examples for some of our tutorials.
 
 <!-- Links Referenced -->
 

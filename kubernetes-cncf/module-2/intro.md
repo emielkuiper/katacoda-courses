@@ -1,6 +1,6 @@
 ![Digital Academy Logo](/sylus/courses/kubernetes-cncf/module-2/assets/digital-academy-logo.png)
 
-Welcome to the Digital Academy "Kubernetes CNCF" series. This is Module 2 - Heptio Velero.
+Welcome to the Digital Academy "Kubernetes CNCF" series. This is Module 2 - VMWare Velero.
 
 Velero gives you tools to back up and restore your Kubernetes cluster resources and persistent volumes. Velero lets you:
 
